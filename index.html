@@ -1,0 +1,71 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Arthur Sales-">
+    <link href="./styles/main.css" rel="stylesheet"/>
+
+    <title>Arthur Sales - Engenheiro Mobile Android</title>
+</head>
+<body onload="load();">
+    <header role="header" class="header"> 
+        <div class="wrapper">
+            <div class="header_main">
+                <h1>ARTHUR</h1>
+                <a class="header_menu-hamburger"></a>
+                <nav class="header_main_menu">
+                        <a class="header_main_menu_item" href="/html/">INÍCIO</a> 
+                        <a class="header_main_menu_item" href="/css/">SOBRE MIM</a> 
+                        <a class="header_main_menu_item" href="/js/">HISTÓRICO</a> 
+                        <a class="header_main_menu_item" href="/jquery/">HABILIDADES</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class='section-padding'>
+        <div class='container'>
+                <h3>Sobre mim</h3>
+        </div>
+    </section>
+
+    <main role="main" class="main"> 
+       <button class="timelineOption">Resume</button>
+       <button class="timelineOption">Experience</button>
+       <button class="timelineOption">Education</button>
+        <div class="timeline">
+            <p>Texto X</p>
+       </div>
+
+    </main>
+    
+    <table>
+    <form>
+    <th>
+            
+        <label for="name">Nome</label>
+        <input class="name" id="name" type="text" name="name"/>
+            
+        <label for="subject">Assunto</label>
+        <input class="subject" id="subject" type="text" name="name"/>
+        
+        <label for="email">E-mail</label>
+        <input class="email" id="email" type="text" name="name"/>
+    </th>
+    <tr>
+        <label for="message">Mensagem</label>
+        <textarea class="message" name="message" rows="5"></textarea>
+
+        <button type="button" onclick="enviar()">Enviar</button>
+    </tr>    
+    </form>
+    </table>
+    <footer role="footer" class="footer">
+            <h4 class="footer_text">COPY RIGHT BY ARTHUR 2019 </h4>
+            <button class="btn_back-to-top">Voltar ao Topo</button>
+        </footer>
+</body>
+
+<script src="./js/load.js"></script>
+<script src="./js/BackToTop.js"></script>
+<script src="./js/showMenu.js"></script>
+</html>
