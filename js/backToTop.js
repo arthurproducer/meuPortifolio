@@ -15,7 +15,7 @@ class BackToTop{
             if(window.scrollY <=0)
             return clearInterval(_instance.interval);
         
-            window.scrollTo(0,window.scrollY - 10)
+            window.scrollTo(0,window.scrollY - 10);
         },10);
         //window.scrollY
         //console.log(1231424);

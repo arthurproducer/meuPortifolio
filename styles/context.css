@@ -1,25 +1,61 @@
-body{
+/* Tabs */
+.career .tab {
+    background: var(--white-color);
+    border: none;
+    border-radius: .2rem .2rem 0 0;
+    cursor: pointer;
     margin: 0;
-    background-color: orange;
+    padding: .55rem;
+}
 
+.career .tab:hover {
+    background: var(--brand-color);
+    color: var(--white-color);
+    transition: all .3s;
 }
-.main{
-    color: yellow;
-    font-size: 20px;
-    padding: 20;
-    width: 100%;
 
+.carrer .tab:focus { outline: none; }
+
+.career .tab.active {
+    background: var(--brand-color);
+    color: var(--white-color);
+    cursor: default;
 }
-.timeline{
-    height: 200px;
-    width: 90%;
-    background-color: rebeccapurple;
-    position: relative;
-}        
-.timelineOption{
-    margin:0;
-    position: relative;
+
+/* Content */
+.career .content { display: none; }
+
+.career .content.active {
+    border: .1rem solid var(--border-color);
+    border-top: .25rem solid var(--brand-color);
+    display: block;
+    padding: .6rem;
 }
-form{
-    position: relative;
+
+@media screen and (min-width: 768px) {
+    .career .content.active { padding: 1.4rem; }
+}
+
+.career .content .box { margin-bottom: 1.4rem; }
+
+.career .content--resume .text {
+    margin-top: 1rem;
+    text-align: justify;
+}
+
+.career .content--resume .text:first-of-type { margin-top: 0; }
+
+.career .content--school .box:last-of-type,
+.career .content--history .box:last-of-type { margin-bottom: 0; }
+
+.career .content .box .title {
+    border-left: .25rem solid var(--brand-color);
+    font-weight: bold;
+    margin-bottom: .8rem;
+    padding-left: .5rem;
+}
+
+.career .content .box .period {
+    font-weight: bold;
+    margin-left: .2rem;
 }

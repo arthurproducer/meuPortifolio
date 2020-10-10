@@ -1,5 +1,8 @@
 @import 'header.css';
-@import 'footer.css';
 @import 'common.css';
 @import 'context.css';
-
+@import 'about.css';
+@import 'var.css';
+@import 'footer.css';
+@import 'contact.css';
+@import 'skills.css';

@@ -22,50 +22,244 @@
         </div>
     </header>
 
-    <section class='section-padding'>
-        <div class='container'>
-                <h3>Sobre mim</h3>
+    <main class="about_me_main">
+        <div class="wrapper">
+            <div class="about_me_content">
+                    <div class="about_me_box">
+                        <img class="about_me_photo" src="./assets/arthur-sales.jpg" alt="Arthur Sales" title="Arthur Sales">
+                        <div class="about_me_social_icons">
+                            <a class="link" href="" target="_blank">
+                                <img class="about_me_social_icons_img" src="./assets/facebook.svg" alt="Icone Facebook" title="Facebook">
+                            </a>
+                            <a class="link" href="" target="_blank">
+                                <img class="about_me_social_icons_img" src="./assets/linkedin.svg" alt="Icone Linkedin" title="Linkedin">
+                            </a>
+                            <a class="link" href="" target="_blank">
+                                <img class="about_me_social_icons_img github" src="./assets/github.svg" alt="Icone GitHub" title="GitHub">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="about_me_description">
+                        <h1 class="name">Arthur Sales</h1>
+                        <span class="job-role">Engenheiro Mobile Android</span>
+
+                        <span class="skill">Kotlin</span>
+                        <span class="skill">Java</span>
+                        <span class="skill">Firebase</span>
+
+                        <p class="text_about_me">
+                            Formado em Ciências da Computação, há alguns anos atuo na área web, no início da carreira atuei como 
+                            estagiário de Design e UI participando ativamente no levantamento das necessidades do usuário, 
+                            estruturação de interfaces e criação em geral, utilizando as mais diversas ferramentas do mercado.
+                        </p>
+                        <p class="text_about_me">
+                            Já efetivo, em busca de renovação para seguir um novo rumo em minha jornada, de Design passei a atuar como 
+                            Front End Developer / UX, no qual, sempre focando na melhor experiência do usuário, utilizando as melhores 
+                            técnicas de semântica, SEO, PWA, AMP, interface e usabilidade.
+                        </p>
+                        <p class="text_about_me">
+                            Entre minhas características básicas encontram-se: bom humor, dinamismo, responsabilidade, perfeccionismo, 
+                            auto exigência, dedicação ao trabalho/estudos e bom relacionamento em geral.
+                        </p>
+
+                        <a class="btn btn-cv" href="./pdf/Curriculo-Gustavo-de-Paula-Caspirro.pdf" target="_blank" >Download CV</a>
+                    </div>
+            </div>
+        </div>     
+    </main>
+
+    <section class="career" id="career">
+        <div class="wrapper">
+            <h1 class="title_section">HISTÓRICO</h1>
+            
+            <button onclick="toggleTab(this)" class="tab tab--resume active">Resumo</button>
+            <button onclick="toggleTab(this)" class="tab tab--school">Acadêmico </button>
+            <button onclick="toggleTab(this)" class="tab tab--history">Profissional</button>
+    
+            <div class="content content--resume active">
+                <p class="text">
+                    Formado em Ciências da Computação, há alguns anos atuo na área web, no início da carreira atuei como 
+                    estagiário de Design e UI participando ativamente no levantamento das necessidades do usuário, 
+                    estruturação de interfaces e criação em geral, utilizando as mais diversas ferramentas do mercado.
+                </p>
+                <p class="text">
+                    Já efetivo, em busca de renovação para seguir um novo rumo em minha jornada, de Design passei a atuar como 
+                    Front End Developer / UX, no qual, sempre focando na melhor experiência do usuário, utilizando as melhores 
+                    técnicas de semântica, SEO, PWA, AMP, interface e usabilidade.
+                </p>
+                <p class="text">
+                    Entre minhas características básicas encontram-se: bom humor, dinamismo, responsabilidade, perfeccionismo, 
+                    auto exigência, dedicação ao trabalho/estudos e bom relacionamento em geral.
+                </p>
+            </div>
+            
+            <div class="content content--school">
+                <div class="box">
+                    <h2 class="title">FIAP</h2>
+                    <span class="school">MBA - Mobile Development</span>
+                    <span class="period">2019 - 2020</span>
+                </div>
+
+                <div class="box">
+                    <h2 class="title">Anhanguera</h2>
+                    <span class="school">Graduação - Ciência da Computação</span>
+                    <span class="period">2012- 2016</span>
+                </div>
+
+                <div class="box">
+                    <h2 class="title">ETEC</h2>
+                    <span class="school">Técnico - Informática para Internet</span>
+                    <span class="period">2019 - 2020</span>
+                </div>
+            </div>
+            
+            <div class="content content--history">
+                <div class="box">
+                    <h2 class="title">Viajanet</h2>
+                    <span class="school">Front End Developer</span>
+                    <span class="period">2017 - 2019</span>
+                </div>
+
+                <div class="box">
+                    <h2 class="title">X-apps</h2>
+                    <span class="school">UX / Front End Developer</span>
+                    <span class="period">2016- 2017</span>
+                </div>
+
+                <div class="box">
+                    <h2 class="title">ABCdoABC</h2>
+                    <span class="school">Web Developer</span>
+                    <span class="period">2013 - 2016</span>
+                </div>
+            </div>
+        </div>
+    </section> 
+    
+    <section class="skills" id="skills">
+        <div class="wrapper">
+            <div class="skills__content">
+                <div class="information-text">
+                    <h1 class="title-section">Habilidades</h1>
+
+                    <p class="information-text__about">
+                        Formado em Ciências da Computação, há alguns anos atuo na área web, no início da carreira atuei como 
+                        estagiário de Design e UI participando ativamente no levantamento das necessidades do usuário, 
+                        estruturação de interfaces e criação em geral, utilizando as mais diversas ferramentas do mercado.
+                    </p>
+                    <p class="information-text__about">
+                        Já efetivo, em busca de renovação para seguir um novo rumo em minha jornada, de Design passei 
+                        a atuar como Front End Developer / UX, no qual, sempre focando na melhor experiência do usuário, 
+                        utilizando as melhores técnicas de semântica, SEO, PWA, AMP, interface e usabilidade.
+                    </p>
+                    <p class="information-text__about">
+                        Entre minhas características básicas encontram-se: bom humor, dinamismo, responsabilidade, 
+                        perfeccionismo, auto exigência, dedicação ao trabalho/estudos e bom relacionamento em geral.
+                    </p>
+                </div>
+
+                <div class="bar-itens">
+                    <div class="bar-itens__item">
+                        <span class="language">HTML (90%)</span>
+                        <div class="bar">
+                            <div class="bar__porcentage porcent90"></div>
+                        </div>
+                    </div>
+                    <div class="bar-itens__item">
+                        <span class="language">SASS (90%)</span>
+                        <div class="bar">
+                            <div class="bar__porcentage porcent90"></div>
+                        </div>
+                    </div>
+                    <div class="bar-itens__item">
+                        <span class="language">LESS (90%)</span>
+                        <div class="bar">
+                            <div class="bar__porcentage porcent90"></div>
+                        </div>
+                    </div>
+                    <div class="bar-itens__item">
+                        <span class="language">CSS (90%)</span>
+                        <div class="bar">
+                            <div class="bar__porcentage porcent90"></div>
+                        </div>
+                    </div>
+                    <div class="bar-itens__item">
+                        <span class="language">JS (60%)</span>
+                        <div class="bar">
+                            <div class="bar__porcentage porcent60"></div>
+                        </div>
+                    </div>
+                    <div class="bar-itens__item">
+                        <span class="language">Angular (60%)</span>
+                        <div class="bar">
+                            <div class="bar__porcentage porcent60"></div>
+                        </div>
+                    </div>
+
+                    <div class="bar-itens__item">
+                        <span class="language">SQL (50%)</span>
+                        <div class="bar">
+                            <div class="bar__porcentage porcent50"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <main role="main" class="main"> 
-       <button class="timelineOption">Resume</button>
-       <button class="timelineOption">Experience</button>
-       <button class="timelineOption">Education</button>
-        <div class="timeline">
-            <p>Texto X</p>
-       </div>
+    <section class="contact" id="contact">
+        <div class="wrapper">
+            <div class="contact__content">
+                <h1 class="title-section">Contato</h1>
 
-    </main>
-    
-    <table>
-    <form>
-    <th>
+                <form class="contact__form">
+                    <div class="contact__form__left">
+                        <label class="label" for="name">Nome</label>
+                        <input class="input name" id="name" type="text" name="name" required>
             
-        <label for="name">Nome</label>
-        <input class="name" id="name" type="text" name="name"/>
+                        <label class="label" for="subject">Assunto</label>
+                        <input class="input subject" id="subject" type="text" name="subject" required>
             
-        <label for="subject">Assunto</label>
-        <input class="subject" id="subject" type="text" name="name"/>
-        
-        <label for="email">E-mail</label>
-        <input class="email" id="email" type="text" name="name"/>
-    </th>
-    <tr>
-        <label for="message">Mensagem</label>
-        <textarea class="message" name="message" rows="5"></textarea>
+                        <label class="label" for="email">E-mail</label>
+                        <input class="input email" id="email" type="email" name="email" required>
+                    </div>
 
-        <button type="button" onclick="enviar()">Enviar</button>
-    </tr>    
-    </form>
-    </table>
-    <footer role="footer" class="footer">
-            <h4 class="footer_text">COPY RIGHT BY ARTHUR 2019 </h4>
-            <button class="btn_back-to-top">Voltar ao Topo</button>
-        </footer>
+                    <div class="contact__form__right">
+                        <label class="label" for="message">Mensagem</label>
+                        <textarea class="textarea message" id="message" name="message" rows="10" required></textarea>
+                        <button class="btn button-send" type="button" onclick="sendEmail()">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__content">
+                <div class="copyright">
+                    <span class="copyright__text">&copy; Todos direitos reservados.</span>
+                </div>
+
+                <button class="btn btn_back-to-top">Voltar ao Topo</button>
+
+                <div class="social-medias">
+                    <a href="https://www.facebook.com/caspirrodesigner/" target="_blank" class="social-medias__link">
+                        <img class="social-medias__media" src="./assets/facebook.svg" alt="Icone Facebook" title="Facebook">
+                    </a>
+                    <a href="https://www.linkedin.com/in/gustavocaspirro/" target="_blank" class="social-medias__link">
+                        <img class="social-medias__media" src="./assets/linkedin.svg" alt="Icone Linkedin" title="Linkedin">
+                    </a>
+                    <a href="https://github.com/gustavocaspirro" target="_blank" class="social-medias__link">
+                        <img class="social-medias__media" src="./assets/github.svg" alt="Icone GitHub" title="GitHub">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 <script src="./js/load.js"></script>
 <script src="./js/BackToTop.js"></script>
 <script src="./js/showMenu.js"></script>
+<script src="./js/tabs.js"></script>
 </html>
