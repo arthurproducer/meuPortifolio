@@ -2,7 +2,7 @@ html {scroll-behavior: smooth;}
 
 body { font-family: Helvetica, sans-serif;}
 
-section {padding: 6.2rem 0;}
+section {padding: 2.5rem 0;}
 
 .wrapper {
     margin: 0 auto;
@@ -10,16 +10,25 @@ section {padding: 6.2rem 0;}
 }
 
 @media screen and (min-width: 768px) {
-    .wrapper {max-width: 75rem;}
+    .wrapper {max-width: 80rem;}
 }
 
 .title-section {
     font-size: 2rem;
-    margin: 0 0 1.8rem;
+    margin: 0 0 1.6rem;
+    text-align: center;
+    position: relative;
+    font-weight: bold;
 }
 
 @media screen and (min-width: 768px) {
-    .title-section {font-size: 1.8rem;}
+    .title-section {
+        font-size: 1.8rem;
+        text-align: center;
+        position: relative;
+        font-weight: bold;
+    }
+    
 }
 
 .btn {

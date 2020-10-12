@@ -1,20 +1,29 @@
+.about {
+    background: var(--about-bg-color);
+}
 .about_me_main {
     background: var(--about-bg-color);
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
 }
 
 .about_me_content {
    align-items: center;
    display: flex;
    flex-direction: column;
-   padding: 2rem 0 0;
+   padding: 1rem 0 0;
 }
 
 @media screen and (min-width:768px) {
     .about_me_content {
         flex-direction: row;
-        padding: 4rem 0 0;
     }
+}
+
+.name {
+    font-size: 1.8rem;
+    margin: 0 0 1rem;
+    text-align: left;
+    font-weight: bold;
 }
 
 .about_me_box {
@@ -29,9 +38,9 @@
 }
 
 .about_me_photo {
-    border-radius: 50%;
+    border-radius: 10%;
     text-align: center;
-    width: 15rem;
+    width: 21rem;
 }
 
 .about_me_social_icons { margin-top: 1rem; }
@@ -42,7 +51,7 @@
 
 .about_me_social_icons_img {
     margin-right: .8rem;
-    width: 1rem;
+    width: 2rem;
 } 
 
 .about_me_social_icons_img .github {
@@ -63,15 +72,9 @@
     }
 }
 
-.about_me_description .name {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-}
-
-.about_me_description .job-role {
+.job-role {
     display: block;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1rem;
 }
 
 .about_me_description .skill {
@@ -86,6 +89,10 @@
 .about_me_description .text_about_me {
     margin-top: 1rem;
     text-align: justify;
+    font-weight: 100;
+    line-height: 24px;
+    color: #646464;
+    margin-bottom:10px;
 }
 
 .about_me_main .btn-cv {

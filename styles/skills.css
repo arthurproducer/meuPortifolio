@@ -31,19 +31,19 @@
     .skills__content .bar-itens { width: 50% }
 }
 
-.skills__content .bar-itens__item { width: 100%; }
+.skills__content .skills-progress { width: 100%; }
 
 @media screen and (min-width: 768px) {
-    .skills__content .bar-itens__item { width: 80% }
+    .skills__content .skills-progress { width: 80% }
 }
 
-.skills__content .bar-itens__item .language {
+.skills__content .skills-progress .language {
     display: block;
     margin-bottom: .5rem;
 }
 
 .skills .bar-itens .bar {
-    background: var(--white-color);
+    background: var(--background-skills-color);
     border: 1px solid var(--border-color);
     border-radius: .2rem;
     height: .5rem;

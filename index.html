@@ -2,6 +2,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Arthur Sales-">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="./styles/main.css" rel="stylesheet"/>
 
     <title>Arthur Sales - Engenheiro Mobile Android</title>
@@ -22,56 +23,73 @@
         </div>
     </header>
 
-    <main class="about_me_main">
-        <div class="wrapper">
-            <div class="about_me_content">
-                    <div class="about_me_box">
-                        <img class="about_me_photo" src="./assets/arthur-sales.jpg" alt="Arthur Sales" title="Arthur Sales">
-                        <div class="about_me_social_icons">
-                            <a class="link" href="" target="_blank">
-                                <img class="about_me_social_icons_img" src="./assets/facebook.svg" alt="Icone Facebook" title="Facebook">
-                            </a>
-                            <a class="link" href="" target="_blank">
-                                <img class="about_me_social_icons_img" src="./assets/linkedin.svg" alt="Icone Linkedin" title="Linkedin">
-                            </a>
-                            <a class="link" href="" target="_blank">
-                                <img class="about_me_social_icons_img github" src="./assets/github.svg" alt="Icone GitHub" title="GitHub">
-                            </a>
-                        </div>
-                    </div>
+    <section class="about" id="about">
+        <h1 class="title-section">Sobre mim</h1>
+
+        <main class="about_me_main">
+            <div class="wrapper">
+                <div class="about_me_content">
                     <div class="about_me_description">
                         <h1 class="name">Arthur Sales</h1>
-                        <span class="job-role">Engenheiro Mobile Android</span>
-
-                        <span class="skill">Kotlin</span>
-                        <span class="skill">Java</span>
-                        <span class="skill">Firebase</span>
 
                         <p class="text_about_me">
-                            Formado em Ciências da Computação, há alguns anos atuo na área web, no início da carreira atuei como 
-                            estagiário de Design e UI participando ativamente no levantamento das necessidades do usuário, 
-                            estruturação de interfaces e criação em geral, utilizando as mais diversas ferramentas do mercado.
-                        </p>
-                        <p class="text_about_me">
-                            Já efetivo, em busca de renovação para seguir um novo rumo em minha jornada, de Design passei a atuar como 
-                            Front End Developer / UX, no qual, sempre focando na melhor experiência do usuário, utilizando as melhores 
-                            técnicas de semântica, SEO, PWA, AMP, interface e usabilidade.
-                        </p>
-                        <p class="text_about_me">
-                            Entre minhas características básicas encontram-se: bom humor, dinamismo, responsabilidade, perfeccionismo, 
-                            auto exigência, dedicação ao trabalho/estudos e bom relacionamento em geral.
-                        </p>
-
-                        <a class="btn btn-cv" href="./pdf/Curriculo-Gustavo-de-Paula-Caspirro.pdf" target="_blank" >Download CV</a>
+                            Graduado como Bacharel de Sistemas de Informação pela Universidade Paulista (2015 - 2018), 
+                            tive como um dos desafios o desenvolvimento de um aplicativo orientador para investimentos em Bitcoin e 
+                            Ethereum que visa auxiliar os primeiros passos de um possível investidor, informando a cotação em tempo real, 
+                            conversões e PDFs para downloads, desde então tenho expandido meu interesse no desenvolvimento mobile, que 
+                            mescla muito bem com meus conhecimentos de design, java e Banco de Dados ampliado ao longo dos anos.
+                        </p>                
                     </div>
-            </div>
-        </div>     
-    </main>
+                        <div class="about_me_box">
+                            <img class="about_me_photo" src="./assets/arthur-sales.jpg" alt="Arthur Sales" title="Arthur Sales">
+                            <div class="about_me_social_icons">
+                                <a class="link" href="" target="_blank">
+                                    <img class="about_me_social_icons_img" src="./assets/facebook.svg" alt="Icone Facebook" title="Facebook">
+                                </a>
+                                <a class="link" href="" target="_blank">
+                                    <img class="about_me_social_icons_img" src="./assets/linkedin.svg" alt="Icone Linkedin" title="Linkedin">
+                                </a>
+                                <a class="link" href="" target="_blank">
+                                    <img class="about_me_social_icons_img github" src="./assets/github.svg" alt="Icone GitHub" title="GitHub">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="about_me_description">
+                            <h1 class="name">Habilidades</h1>   
+                            <span class="job-role"><i class='fa fa-briefcase'></i> Engenheiro Mobile Android</span>
+                            <span class="skill">Kotlin</span>
+                            <span class="skill">Java</span>
+                            <span class="skill">Firebase</span>
+
+                            <p class="text_about_me">
+                                Atualmente tenho dedicado demasiado tempo a língua inglesa não somente pela sua importância 
+                                mas pelo prazer de aprender um novo idioma, unindo meus gostos por leitura, filmes e música a língua estrangeira.
+                            </p>
+                        
+                            <a class="btn btn-cv" href="./pdf/Curriculo-Gustavo-de-Paula-Caspirro.pdf" target="_blank" >Download CV</a>
+                        </div>
+                </div>
+            </div>     
+        </main>
+    </section>
 
     <section class="career" id="career">
         <div class="wrapper">
-            <h1 class="title_section">HISTÓRICO</h1>
+            <h1 class="title-section">Histórico</h1>
             
+            <div class='tabs-icon'>
+                <ul>
+                <li class='active' id='tab-1'>
+                    <i aria-hidden='true' class='fa fa-briefcase'></i>
+                    <h6 onclick="toggleTab(this)" class="tab tab--school active">PROFISSIONAL</h6>
+                </li>
+                <li id='tab-2'>
+                    <i aria-hidden='true' class='fa fa-graduation-cap'></i>
+                    <h6 onclick="toggleTab(this)" class="tab tab--history">ACADÊMICO</h6>
+                </li>
+                </ul>
+            </div>
+
             <button onclick="toggleTab(this)" class="tab tab--resume active">Resumo</button>
             <button onclick="toggleTab(this)" class="tab tab--school">Acadêmico </button>
             <button onclick="toggleTab(this)" class="tab tab--history">Profissional</button>
@@ -158,44 +176,43 @@
                 </div>
 
                 <div class="bar-itens">
-                    <div class="bar-itens__item">
+                    <div class="skills-progress">
                         <span class="language">HTML (90%)</span>
                         <div class="bar">
                             <div class="bar__porcentage porcent90"></div>
                         </div>
                     </div>
-                    <div class="bar-itens__item">
+                    <div class="skills-progress">
                         <span class="language">SASS (90%)</span>
                         <div class="bar">
                             <div class="bar__porcentage porcent90"></div>
                         </div>
                     </div>
-                    <div class="bar-itens__item">
+                    <div class="skills-progress">
                         <span class="language">LESS (90%)</span>
                         <div class="bar">
                             <div class="bar__porcentage porcent90"></div>
                         </div>
                     </div>
-                    <div class="bar-itens__item">
+                    <div class="skills-progress">
                         <span class="language">CSS (90%)</span>
                         <div class="bar">
                             <div class="bar__porcentage porcent90"></div>
                         </div>
                     </div>
-                    <div class="bar-itens__item">
+                    <div class="skills-progress">
                         <span class="language">JS (60%)</span>
                         <div class="bar">
                             <div class="bar__porcentage porcent60"></div>
                         </div>
                     </div>
-                    <div class="bar-itens__item">
+                    <div class="skills-progress">
                         <span class="language">Angular (60%)</span>
                         <div class="bar">
                             <div class="bar__porcentage porcent60"></div>
                         </div>
                     </div>
-
-                    <div class="bar-itens__item">
+                    <div class="skills-progress">
                         <span class="language">SQL (50%)</span>
                         <div class="bar">
                             <div class="bar__porcentage porcent50"></div>
@@ -262,4 +279,5 @@
 <script src="./js/BackToTop.js"></script>
 <script src="./js/showMenu.js"></script>
 <script src="./js/tabs.js"></script>
+<script src="./js/sendEmail.js"></script>
 </html>
