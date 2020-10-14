@@ -24,8 +24,11 @@
     </header>
 
     <section class="about" id="about">
-        <h1 class="title-section">Sobre mim</h1>
-
+        <h1 class="title-section">
+            Sobre mim     
+            <div class='border-bottom'></div>
+        </h1>
+    
         <main class="about_me_main">
             <div class="wrapper">
                 <div class="about_me_content">
@@ -44,13 +47,19 @@
                             <img class="about_me_photo" src="./assets/arthur-sales.jpg" alt="Arthur Sales" title="Arthur Sales">
                             <div class="about_me_social_icons">
                                 <a class="link" href="" target="_blank">
-                                    <img class="about_me_social_icons_img" src="./assets/facebook.svg" alt="Icone Facebook" title="Facebook">
+                                    <!--img class="about_me_social_icons_img" src="./assets/facebook.svg" alt="Icone Facebook" title="Facebook">-->
+                                    <span style="font-size: 48px; color: var(--btn-color);"><i class="fa fa-facebook-square"></i></span>
+
                                 </a>
                                 <a class="link" href="" target="_blank">
-                                    <img class="about_me_social_icons_img" src="./assets/linkedin.svg" alt="Icone Linkedin" title="Linkedin">
+                                    <!--<img class="about_me_social_icons_img" src="./assets/linkedin.svg" alt="Icone Linkedin" title="Linkedin">-->
+                                    <span style="font-size: 48px; color: var(--btn-color);"><i aria-hidden='true' class='fa fa-linkedin-square'></i></span>
+
                                 </a>
                                 <a class="link" href="" target="_blank">
-                                    <img class="about_me_social_icons_img github" src="./assets/github.svg" alt="Icone GitHub" title="GitHub">
+                                    <!--<img class="about_me_social_icons_img github" src="./assets/github.svg" alt="Icone GitHub" title="GitHub">-->
+                                    <span style="font-size: 48px; color: var(--btn-color);"><i aria-hidden='true' class='fa fa-github-square'></i></span>
+
                                 </a>
                             </div>
                         </div>
@@ -58,8 +67,8 @@
                             <h1 class="name">Habilidades</h1>   
                             <span class="job-role"><i class='fa fa-briefcase'></i> Engenheiro Mobile Android</span>
                             <span class="skill">Kotlin</span>
-                            <span class="skill">Java</span>
-                            <span class="skill">Firebase</span>
+                            <span class="skill">- Java</span>
+                            <span class="skill">- Firebase</span>
 
                             <p class="text_about_me">
                                 Atualmente tenho dedicado demasiado tempo a língua inglesa não somente pela sua importância 
@@ -75,43 +84,16 @@
 
     <section class="career" id="career">
         <div class="wrapper">
-            <h1 class="title-section">Histórico</h1>
+            <h1 class="title-section">Histórico
+                <div class='border-bottom'></div>
+            </h1>
             
             <div class='tabs-icon'>
-                <ul>
-                <li class='active' id='tab-1'>
-                    <i aria-hidden='true' class='fa fa-briefcase'></i>
-                    <h6 onclick="toggleTab(this)" class="tab tab--school active">PROFISSIONAL</h6>
-                </li>
-                <li id='tab-2'>
-                    <i aria-hidden='true' class='fa fa-graduation-cap'></i>
-                    <h6 onclick="toggleTab(this)" class="tab tab--history">ACADÊMICO</h6>
-                </li>
-                </ul>
-            </div>
-
-            <button onclick="toggleTab(this)" class="tab tab--resume active">Resumo</button>
-            <button onclick="toggleTab(this)" class="tab tab--school">Acadêmico </button>
-            <button onclick="toggleTab(this)" class="tab tab--history">Profissional</button>
-    
-            <div class="content content--resume active">
-                <p class="text">
-                    Formado em Ciências da Computação, há alguns anos atuo na área web, no início da carreira atuei como 
-                    estagiário de Design e UI participando ativamente no levantamento das necessidades do usuário, 
-                    estruturação de interfaces e criação em geral, utilizando as mais diversas ferramentas do mercado.
-                </p>
-                <p class="text">
-                    Já efetivo, em busca de renovação para seguir um novo rumo em minha jornada, de Design passei a atuar como 
-                    Front End Developer / UX, no qual, sempre focando na melhor experiência do usuário, utilizando as melhores 
-                    técnicas de semântica, SEO, PWA, AMP, interface e usabilidade.
-                </p>
-                <p class="text">
-                    Entre minhas características básicas encontram-se: bom humor, dinamismo, responsabilidade, perfeccionismo, 
-                    auto exigência, dedicação ao trabalho/estudos e bom relacionamento em geral.
-                </p>
+            <button onclick="toggleTab(this)" id='tab-1' class="tab tab--school"> <i aria-hidden='true' class='fa fa-graduation-cap'></i> Acadêmico </button>
+            <button onclick="toggleTab(this)" id='tab-2' class="tab tab--history"><i aria-hidden='true' class='fa fa-briefcase'></i> Profissional</button>    
             </div>
             
-            <div class="content content--school">
+            <div class="content content--school active">
                 <div class="box">
                     <h2 class="title">FIAP</h2>
                     <span class="school">MBA - Mobile Development</span>

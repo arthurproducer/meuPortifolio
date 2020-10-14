@@ -1,8 +1,8 @@
 .about {
-    background: var(--about-bg-color);
+    background:#f8f8f8;
 }
 .about_me_main {
-    background: var(--about-bg-color);
+    background: #f8f8f8;
     padding-bottom: 2rem;
 }
 
@@ -83,7 +83,7 @@
 
 .about_me_description .skill::before {
     color: var(--brand-color);
-    content: ' - ';
+    content: '  ';
 }
 
 .about_me_description .text_about_me {

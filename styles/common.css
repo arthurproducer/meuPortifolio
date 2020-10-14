@@ -41,3 +41,44 @@ section {padding: 2.5rem 0;}
     background: var(--btn-hover-color);
     transition: all .2s;
 }
+
+.border-bottom {
+    width:12px;
+    height:12px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    margin:0 auto;
+    position:relative;
+}
+
+.border-bottom:before,
+.border-bottom:after{
+    content:"";
+    position:absolute;
+    height:1px;
+    width:60px;
+}
+
+.border-bottom:before{
+    left:-70px;
+    bottom:5px;
+}
+
+.border-bottom:after{
+    right:-70px;
+    bottom:5px;
+}
+
+.color-highlight{
+    color:#C49B66;
+}
+
+.border-bottom{
+    border:1px solid var(--primary-dark-color);
+}
+
+.border-bottom:before,
+.border-bottom:after{
+    background:#C49B66;
+}
