@@ -1,3 +1,3 @@
 # myPortifolio teste
 
-![Page2](./assets/myPortifolio_index.html.png)
+![Page](./assets/myPortifolio_index.html.png)
