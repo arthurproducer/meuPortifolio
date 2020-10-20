@@ -1,4 +1,4 @@
-.skills { background: #d6efff; }
+.skills { background: var(--primary-color); }
 
 .skills__content {
     display: flex;
@@ -9,15 +9,37 @@
     .skills__content { flex-direction: row; }
 }
 
-.skills__content .information-text { width: 100%; }
+.skills__content .information-text { width: 100%; padding-right: 50px; }
+
+.skills__content .information-text .title-section { padding-left: 8%; }
 
 @media screen and (min-width: 768px) {
-    .skills__content .information-text { width: 50% }
+    .skills__content .information-text { width: 75%;  }
 }
 
-.skills__content .information-text__about {
-    line-height: 1.4rem;
-    margin-bottom: 2rem;
+.skills .skills__content .information-text .skills-space { float: right; }
+
+.skills-space {width:43%; }
+
+.skills .skills__content .information-text .skills-space p {
+    text-align: center;
+    color: var(--font-color);
+}
+.skills .skills__content .information-text .skills-space h3 {
+    text-align: center;
+}
+
+.skills .skills__content .information-text .skills-space i {
+    font-size: 35px;
+    color: var(--btn-hover-color);
+    margin-bottom: 10px;
+    padding-left: 45%;
+}
+
+.skills .skills__content .information-text  .bord {
+    border-right: 0.1rem solid var(--primary-dark-color);
+    margin-right: 20px;
+    padding-right: 20px;
 }
 
 .skills__content .bar-itens {
@@ -53,7 +75,7 @@
 }
 
 .skills .bar__porcentage {
-    background: var(--brand-color);
+    background: var(--secondary-color);
     height: 100%;
 }
 

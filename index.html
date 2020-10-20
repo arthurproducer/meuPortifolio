@@ -14,10 +14,11 @@
                 <h1>ARTHUR</h1>
                 <a class="header_menu-hamburger"></a>
                 <nav class="header_main_menu">
-                        <a class="header_main_menu_item" href="/html/">INÍCIO</a> 
-                        <a class="header_main_menu_item" href="/css/">SOBRE MIM</a> 
-                        <a class="header_main_menu_item" href="/js/">HISTÓRICO</a> 
-                        <a class="header_main_menu_item" href="/jquery/">HABILIDADES</a>
+                        <a class="header_main_menu_item" href="#">INÍCIO</a> 
+                        <a class="header_main_menu_item" href="#about-me">SOBRE MIM</a> 
+                        <a class="header_main_menu_item" href="#historic">HISTÓRICO</a> 
+                        <a class="header_main_menu_item" href="#skills">HABILIDADES</a>
+                        <a class="header_main_menu_item" href="#contact">CONTATOS</a>
                 </nav>
             </div>
         </div>
@@ -26,10 +27,10 @@
     <section class="about" id="about">
         <h1 class="title-section">
             Sobre mim     
-            <div class='border-bottom'></div>
+            <div class='border-line'></div>
         </h1>
     
-        <main class="about_me_main">
+        <main class="about_me_main" id="about-me">
             <div class="wrapper">
                 <div class="about_me_content">
                     <div class="about_me_description">
@@ -46,20 +47,15 @@
                         <div class="about_me_box">
                             <img class="about_me_photo" src="./assets/arthur-sales.jpg" alt="Arthur Sales" title="Arthur Sales">
                             <div class="about_me_social_icons">
-                                <a class="link" href="" target="_blank">
-                                    <!--img class="about_me_social_icons_img" src="./assets/facebook.svg" alt="Icone Facebook" title="Facebook">-->
-                                    <span style="font-size: 48px; color: var(--btn-color);"><i class="fa fa-facebook-square"></i></span>
+                                <a class="link" href="https://www.facebook.com/arthur.salesmoreira" target="_blank">
+                                    <span style="font-size: 48px; color: var(--secondary-color);"><i class="fa fa-facebook-square"></i></span>
+                                </a>
+                                <a class="link" href="https://www.linkedin.com/in/arthur-sm" target="_blank">
+                                    <span style="font-size: 48px; color: var(--secondary-color);"><i aria-hidden='true' class='fa fa-linkedin-square'></i></span>
 
                                 </a>
-                                <a class="link" href="" target="_blank">
-                                    <!--<img class="about_me_social_icons_img" src="./assets/linkedin.svg" alt="Icone Linkedin" title="Linkedin">-->
-                                    <span style="font-size: 48px; color: var(--btn-color);"><i aria-hidden='true' class='fa fa-linkedin-square'></i></span>
-
-                                </a>
-                                <a class="link" href="" target="_blank">
-                                    <!--<img class="about_me_social_icons_img github" src="./assets/github.svg" alt="Icone GitHub" title="GitHub">-->
-                                    <span style="font-size: 48px; color: var(--btn-color);"><i aria-hidden='true' class='fa fa-github-square'></i></span>
-
+                                <a class="link" href="https://github.com/arthurproducer" target="_blank">
+                                    <span style="font-size: 48px; color: var(--secondary-color);"><i aria-hidden='true' class='fa fa-github-square'></i></span>
                                 </a>
                             </div>
                         </div>
@@ -75,62 +71,120 @@
                                 mas pelo prazer de aprender um novo idioma, unindo meus gostos por leitura, filmes e música a língua estrangeira.
                             </p>
                         
-                            <a class="btn btn-cv" href="./pdf/Curriculo-Gustavo-de-Paula-Caspirro.pdf" target="_blank" >Download CV</a>
+                            <a class="btn btn-cv" href="./assets/curriculo_arthur_2019.pdf" target="_blank" >Download CV</a>
                         </div>
                 </div>
             </div>     
         </main>
     </section>
 
-    <section class="career" id="career">
+    <section class="historic" id="historic">
         <div class="wrapper">
             <h1 class="title-section">Histórico
-                <div class='border-bottom'></div>
+                <div class='border-line'></div>
             </h1>
-            
             <div class='tabs-icon'>
             <button onclick="toggleTab(this)" id='tab-1' class="tab tab--school"> <i aria-hidden='true' class='fa fa-graduation-cap'></i> Acadêmico </button>
-            <button onclick="toggleTab(this)" id='tab-2' class="tab tab--history"><i aria-hidden='true' class='fa fa-briefcase'></i> Profissional</button>    
+            <button onclick="toggleTab(this)" id='tab-2' class="tab tab--job"><i aria-hidden='true' class='fa fa-briefcase'></i> Profissional</button>    
             </div>
             
+            <!-- tabs-content -->
             <div class="content content--school active">
-                <div class="box">
-                    <h2 class="title">FIAP</h2>
-                    <span class="school">MBA - Mobile Development</span>
-                    <span class="period">2019 - 2020</span>
+                <div class='main-icon'>
+                    <span>
+                    <i aria-hidden='true' class='fa fa-graduation-cap'></i>
+                    </span>
                 </div>
-
-                <div class="box">
-                    <h2 class="title">Anhanguera</h2>
-                    <span class="school">Graduação - Ciência da Computação</span>
-                    <span class="period">2012- 2016</span>
-                </div>
-
-                <div class="box">
-                    <h2 class="title">ETEC</h2>
-                    <span class="school">Técnico - Informática para Internet</span>
-                    <span class="period">2019 - 2020</span>
-                </div>
+                    <ul>
+                        <li>
+                            <div class="box">
+                                <h2 class="title">FIAP</h2>
+                                <p class="description">MBA em Mobile Development - Apps, IOT, Chatbox e Assistente Virtual. Utilizo as 4 plataformas de desenvolvimento Mobile (Android,iOS, Xamarin e HTML5 / React Native / PWA Google) curso de 360 horas com previsão de término no ano de 2020.</p>
+                            </div>       
+                            <div class="period-box">
+                                <h4 class="period text-right">2019 - 2020</h4>
+                            </div>                    
+                        </li>
+                        <li>
+                            <div class="box">
+                                <h2 class="title">UNIP -Universidade Paulista</h2>
+                                <p class="text">Curso Bacharelado de Sitemas de Informação. O curso é divido em 3 ciclos sendo os primeiros anos o Ciclo Básico focado na base de um profissional de T.I. seguido pelos ciclos de Programação/Sistemas (com Java , C , C#, SQL e etc) e Administração(PMBOK, Segurança e etc).</p>
+                            </div>       
+                            <div class="period-box">
+                                <h4 class="period">2015 - 2018</h4>
+                            </div>                    
+                        </li>
+                        <li>
+                            <div class="box">
+                                <h2 class="title">EMEF. Professor Antônio Frascisco Redondo</h2>
+                                <p class="description">Ensino Médio.</p>
+                            </div>       
+                            <div class="period-box">
+                                <h4 class="period">2012 - 2014</h4>
+                            </div>                    
+                        </li>
+                        <div style="clear: both;"></div>
+                    </ul>
             </div>
             
-            <div class="content content--history">
-                <div class="box">
-                    <h2 class="title">Viajanet</h2>
-                    <span class="school">Front End Developer</span>
-                    <span class="period">2017 - 2019</span>
+            <div class="content content--job">
+                <div class='main-icon'>
+                    <span>
+                    <i aria-hidden='true' class='fa fa-briefcase'></i>
+                    </span>
                 </div>
-
-                <div class="box">
-                    <h2 class="title">X-apps</h2>
-                    <span class="school">UX / Front End Developer</span>
-                    <span class="period">2016- 2017</span>
-                </div>
-
-                <div class="box">
-                    <h2 class="title">ABCdoABC</h2>
-                    <span class="school">Web Developer</span>
-                    <span class="period">2013 - 2016</span>
-                </div>
+                    <ul>
+                        <li>
+                            <div class="box">
+                                <h2 class="title">Engenheiro Mobile Jr - Itaú Unibanco</h2>
+                                <p class="description">No Itaú forneço suporte aos desenvolvedores com narrativas técnicas detalhadas do fluxo que estamos construindo, auxilio time de qualidade, acessibilidade e negócio, com resoluções de problemas técnicos encontrado durante os seus testes. Dentre outras atividades temos Code Review dos códigos feitos pelos desenvolvedores e interjornada durante subida da feature em produção, bem como todo o acompanhamento necessário durante o processo.</p>
+                            </div>       
+                            <div class="period-box">
+                                <h4 class="period text-right">2020 - Presente</h4>
+                            </div>                    
+                        </li>
+                        <li>
+                            <div class="box">
+                                <h2 class="title">Técnico de Sistemas Jr -BRQ</h2>
+                                <p class="text">Durante meu período na BRQ atuei como desenvolver Android nos aplicativos Itaucard, Credicard, Hipercard e Magalu. Dentre as principais features, melhorias na tela de inicio conhecida como Home e criamos o MVP do fluxo de contestação do APP Credicard. Sempre atento aos testes unitários e acessibilidade durante o desenvolvimento de cada feature.</p>
+                            </div>       
+                            <div class="period-box">
+                                <h4 class="period">2019 - 2020</h4>
+                            </div>                    
+                        </li>
+                        <li>
+                            <div class="box">
+                                <h2 class="title">Estagiário de T.I.- Editora Abril</h2>
+                                <p class="description">- Aquisição, renovação e transferências de domínios da internet provenientes de demandas das redações editoriais internas. 
+                                    - Aquisição e renovação dos certificados digitais (Digicert). 
+                                    - Suporte nível 1 GSuite (Email corporativo) 
+                                    - Monitoração e atuação nível 1 na infraestrutura interna (presentes nas plataformas Cloud AWS, Cloud Azure, VMware e etc) 
+                                    - Organização das Faturas telefônicas e dispositivos celulares , nos sistemas internos SGT e ERP.</p>
+                            </div>       
+                            <div class="period-box">
+                                <h4 class="period">2017 - 2019</h4>
+                            </div>                    
+                        </li>
+                        <li>
+                            <div class="box">
+                                <h2 class="title">Estoquista - Grown Optical Ltda</h2>
+                                <p class="description">Iniciei como Aprendiz de Logística supervisionando uma das máquinas e mantendo o estoque de lentes prontas e seus certificados organizados, fazendo a separação das lentes solicitadas, dando baixa no sistema dos produtos retirados, fechando pedidos, acompanhando a quantidade em estoque e caso necessário repondo e o recebendo produtos (tanto lentes quando insumos). Após 5 meses fui efetivado passei a trabalhar no estoque de blocos, mantendo as funções de separação, baixa e reposição e recebimento dos produtos, mas com foco nas minhas novas funções de conferir produtos separados, utilização da fitadeira (máquina com acionamento pneumático para aplicação da fita a vácuo) e verificar a qualidade das futuras lentes para óculos, eliminando as defeituosas.</p>
+                            </div>       
+                            <div class="period-box">
+                                <h4 class="period">2014 - 2016</h4>
+                            </div>                    
+                        </li>
+                        <li>
+                            <div class="box">
+                                <h2 class="title">Monitor - People Formação Completa</h2>
+                                <p class="description">Como monitor eu auxiliava os alunos aos fins de semana nos exercícios relacionados ao pacote office, digitação e pacote Adobe e os professores durante suas aulas, acompanhando os alunos com dificuldade na execução de algum dos exercícios propostos.</p>
+                            </div>       
+                            <div class="period-box">
+                                <h4 class="period">2013 - 2014</h4>
+                            </div>                    
+                        </li>
+                        <div style="clear: both;"></div>
+                    </ul>
             </div>
         </div>
     </section> 
@@ -139,65 +193,57 @@
         <div class="wrapper">
             <div class="skills__content">
                 <div class="information-text">
-                    <h1 class="title-section">Habilidades</h1>
+                    <h1 class="title-section">Habilidades
+                        <div class='border-line'></div>
+                    </h1>
 
-                    <p class="information-text__about">
-                        Formado em Ciências da Computação, há alguns anos atuo na área web, no início da carreira atuei como 
-                        estagiário de Design e UI participando ativamente no levantamento das necessidades do usuário, 
-                        estruturação de interfaces e criação em geral, utilizando as mais diversas ferramentas do mercado.
-                    </p>
-                    <p class="information-text__about">
-                        Já efetivo, em busca de renovação para seguir um novo rumo em minha jornada, de Design passei 
-                        a atuar como Front End Developer / UX, no qual, sempre focando na melhor experiência do usuário, 
-                        utilizando as melhores técnicas de semântica, SEO, PWA, AMP, interface e usabilidade.
-                    </p>
-                    <p class="information-text__about">
-                        Entre minhas características básicas encontram-se: bom humor, dinamismo, responsabilidade, 
-                        perfeccionismo, auto exigência, dedicação ao trabalho/estudos e bom relacionamento em geral.
-                    </p>
+                    <div class='skills-space'>
+                        <i class='fa fa-laptop'></i>                            
+                        <h3>Desenvolvedor</h3>
+                        <p>Desenvolvi um aplicativo em <b>Android</b> com interação ao <b>Firebase que orienta investidores de Bitcoin e Ethereum.</b> Desenvolvi a maior parte do tempo em  <b>Java</b> porém fiz exercícios em C#, C, junto aos bancos SQL e NoSQL. Já trabalhei com linux para fazer micração de sistemas. Também tenho conhecimento em JavaFX.</p>
+                    </div>
+                    <div class='skills-space bord'>
+                        <i class='fa fa-pencil-square'></i>
+                            <h3>Autocrítico</h3>
+                            <p>Busco sempre analisar meus erros para poder aprender com eles e então poder tomar as melhores decisões,  tenho pleno conhecimento dos meus pontos fortes e fracos e busco sempre me aprimorar e me superar. Acretido que todos somos capazes de ir em busca do que queremos e no que acreditamos.  </p>
+                    </div>    
                 </div>
 
                 <div class="bar-itens">
                     <div class="skills-progress">
-                        <span class="language">HTML (90%)</span>
-                        <div class="bar">
-                            <div class="bar__porcentage porcent90"></div>
-                        </div>
-                    </div>
-                    <div class="skills-progress">
-                        <span class="language">SASS (90%)</span>
-                        <div class="bar">
-                            <div class="bar__porcentage porcent90"></div>
-                        </div>
-                    </div>
-                    <div class="skills-progress">
-                        <span class="language">LESS (90%)</span>
-                        <div class="bar">
-                            <div class="bar__porcentage porcent90"></div>
-                        </div>
-                    </div>
-                    <div class="skills-progress">
-                        <span class="language">CSS (90%)</span>
-                        <div class="bar">
-                            <div class="bar__porcentage porcent90"></div>
-                        </div>
-                    </div>
-                    <div class="skills-progress">
-                        <span class="language">JS (60%)</span>
-                        <div class="bar">
-                            <div class="bar__porcentage porcent60"></div>
-                        </div>
-                    </div>
-                    <div class="skills-progress">
-                        <span class="language">Angular (60%)</span>
-                        <div class="bar">
-                            <div class="bar__porcentage porcent60"></div>
-                        </div>
-                    </div>
-                    <div class="skills-progress">
-                        <span class="language">SQL (50%)</span>
+                        <span class="language">Firebase (56%)</span>
                         <div class="bar">
                             <div class="bar__porcentage porcent50"></div>
+                        </div>
+                    </div>
+                    <div class="skills-progress">
+                        <span class="language">Android(Java) (70%)</span>
+                        <div class="bar">
+                            <div class="bar__porcentage porcent70"></div>
+                        </div>
+                    </div>
+                    <div class="skills-progress">
+                        <span class="language">HTML / CSS (48%)</span>
+                        <div class="bar">
+                            <div class="bar__porcentage porcent40"></div>
+                        </div>
+                    </div>
+                    <div class="skills-progress">
+                        <span class="language">UX | UI (53%)</span>
+                        <div class="bar">
+                            <div class="bar__porcentage porcent50"></div>
+                        </div>
+                    </div>
+                    <div class="skills-progress">
+                        <span class="language">SQL (45%)</span>
+                        <div class="bar">
+                            <div class="bar__porcentage porcent40"></div>
+                        </div>
+                    </div>
+                    <div class="skills-progress">
+                        <span class="language">Kotlin (80%)</span>
+                        <div class="bar">
+                            <div class="bar__porcentage porcent80"></div>
                         </div>
                     </div>
                 </div>
@@ -208,7 +254,11 @@
     <section class="contact" id="contact">
         <div class="wrapper">
             <div class="contact__content">
-                <h1 class="title-section">Contato</h1>
+                <h1 class="title-section">Contatos
+                    <div class='border-line'></div>
+
+                </h1>
+                
 
                 <form class="contact__form">
                     <div class="contact__form__left">
@@ -242,14 +292,15 @@
                 <button class="btn btn_back-to-top">Voltar ao Topo</button>
 
                 <div class="social-medias">
-                    <a href="https://www.facebook.com/caspirrodesigner/" target="_blank" class="social-medias__link">
-                        <img class="social-medias__media" src="./assets/facebook.svg" alt="Icone Facebook" title="Facebook">
+                    <a href="https://www.facebook.com/arthur.salesmoreira" target="_blank" class="social-medias__link">
+                        <span style="font-size: 48px; color: var(--secondary-color);"><i class="fa fa-facebook-square"></i></span>
+
                     </a>
-                    <a href="https://www.linkedin.com/in/gustavocaspirro/" target="_blank" class="social-medias__link">
-                        <img class="social-medias__media" src="./assets/linkedin.svg" alt="Icone Linkedin" title="Linkedin">
+                    <a href="https://www.linkedin.com/in/arthur-sm/" target="_blank" class="social-medias__link">
+                        <span style="font-size: 48px; color: var(--secondary-color);"><i aria-hidden='true' class='fa fa-linkedin-square'></i></span>
                     </a>
-                    <a href="https://github.com/gustavocaspirro" target="_blank" class="social-medias__link">
-                        <img class="social-medias__media" src="./assets/github.svg" alt="Icone GitHub" title="GitHub">
+                    <a href="https://github.com/arthurproducer" target="_blank" class="social-medias__link">
+                        <span style="font-size: 48px; color: var(--secondary-color);"><i aria-hidden='true' class='fa fa-github-square'></i></span>
                     </a>
                 </div>
             </div>

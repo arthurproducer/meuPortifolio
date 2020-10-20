@@ -1,12 +1,15 @@
 *{
     --border-color: #ccc;
     --brand-color: #7e7e7e;
-    --background-skills-color: #f7f7f7;
+    --secondary-color: #C49B66;
+    --background-skills-color: #fff;
     --font-color: #363636;
     --white-color: #fff;
+    --black-color: #000;
     --primary-dark-color: #585858;
     --about-bg-color: #d6efff;
     --btn-color: #0c3553;
-    --seconday-color: #f8f8f8;
+    --primary-color: #f8f8f8;
     --btn-hover-color: #16486e;
+    --baby-blue-color:#668fc4;
 }
